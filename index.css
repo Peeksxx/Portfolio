@@ -1,0 +1,98 @@
+body {
+    position: absolute;
+    margin: auto;
+    width: 70vw;
+    height: 70vh;
+    transform: translate(20%, 20%); 
+    background-color:black
+}
+
+.landingpagebox {
+    position: absolute;
+    margin: auto;
+    width: 70vw;
+    height: 70vh;
+    background-image: url("Assets/Images/LandingpageBG.png"); opacity: 0.8;
+    background-size: 110% 110%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(181, 181, 181, 0.362);
+    background-color: black;
+    animation: 1s landingpagefade-in;
+}
+
+.slide-in1 {
+    display: inline-block;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    animation: 1s left-to-right forwards 0.6s;
+    font-size: 30px;
+    letter-spacing: -.005em;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding-left: 50px;
+    opacity: 0%;
+}
+
+.slide-in2 {
+    display: block;
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    animation: 1s left-to-right forwards 1s;
+    font-size: 48px;
+    letter-spacing: -.005em;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding-left: 50px;
+    margin-top: -50px;
+    opacity: 0%;
+}
+
+.separationlines {
+    display: block;
+    transform: translate(10%, -40px); 
+    width: 25vw;
+    height: 5px;
+    background-color: white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    animation: 1s seplinefade-in forwards 1.5s;
+    opacity: 0%;
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-40px);
+        opacity: 0%;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes landingpagefade-in {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 80%;
+    }
+}
+
+@keyframes seplinefade-in {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
